@@ -102,7 +102,7 @@ BiomeSizeWhenBorder: 8
 BiomeHeight: 0.1
 
 # Biome volatility.
-BiomeVolatility: 0.2
+BiomeVolatility: 0.5
 
 # Smooth radius between biomes. Must be between 0 and 32, inclusive. The resulting
 # smooth radius seems to be  (thisSmoothRadius + 1 + smoothRadiusOfBiomeOnOtherSide) * 4 .
@@ -341,13 +341,13 @@ FoliageColorIsMultiplier: true
 # CustomStructure resource: starts a BO3 structure in the chunk.
 
 Ore(minecraft:quartz_ore,33,10,100.0,0,255,minecraft:netherrack)
-Ore(minecraft:quartz_ore,33,10,100.0,0,255,minecraft:soul_sand)
-Ore(minecraft:quartz_ore,33,10,100.0,0,255,minecraft:glowstone)
-Ore(minecraft:quartz_ore,33,10,100.0,0,255,minecraft:magma)
-Liquid(minecraft:lava,10,100.0,8,128,minecraft:netherrack)
-Plant(minecraft:fire,2,100.0,0,128,minecraft:netherrack)
-Plant(minecraft:brown_mushroom,2,100.0,0,128,minecraft:netherrack)
-Plant(minecraft:red_mushroom,2,100.0,0,128,minecraft:netherrack)
+Ore(minecraft:soul_sand,33,10,100.0,0,255,minecraft:netherrack)
+Ore(minecraft:glowstone,33,10,100.0,0,255,minecraft:netherrack)
+Ore(minecraft:magma,33,10,100.0,0,127,minecraft:netherrack)
+Ore(minecraft:lava,3,50,100.0,0,255,minecraft:netherrack)
+Plant(minecraft:fire,20,100.0,0,255,minecraft:netherrack)
+Plant(minecraft:brown_mushroom,2,100.0,0,255,minecraft:netherrack)
+Plant(minecraft:red_mushroom,2,100.0,0,255,minecraft:netherrack)
 CustomObject(UseWorld)
 
 #######################################################################
@@ -420,19 +420,3 @@ RareBuildingType: disabled
 # |                           Mob spawning                          | #
 # +-----------------------------------------------------------------+ #
 #######################################################################
-
-# It's not possible to change mob spawns in vanilla biomes. These
-# are the values used by vanilla for this biome. They are read-only:
-# changes to this setting are ignored and overwritten.
-
-# The monsters (skeletons, zombies, etc.) that spawn in this biome
-SpawnMonsters: [{"mob": "minecraft:ghast", "weight": 50, "min": 4, "max": 4}, {"mob": "minecraft:zombie_pigman", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:magma_cube", "weight": 2, "min": 4, "max": 4}, {"mob": "minecraft:enderman", "weight": 1, "min": 4, "max": 4}]
-
-# The friendly creatures (cows, pigs, etc.) that spawn in this biome
-SpawnCreatures: []
-
-# The water creatures (only squids in vanilla) that spawn in this biome
-SpawnWaterCreatures: []
-
-# The ambient creatures (only bats in vanila) that spawn in this biome
-SpawnAmbientCreatures: []
