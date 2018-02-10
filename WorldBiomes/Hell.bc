@@ -99,7 +99,7 @@ BiomeSizeWhenBorder: 8
 # BiomeHeight mean how much height will be added in terrain generation
 # It is double value from -10.0 to 10.0
 # Value 0.0 equivalent half of map height with all other default settings
-BiomeHeight: 0.1
+BiomeHeight: -1.5
 
 # Biome volatility.
 BiomeVolatility: 0.5
@@ -340,10 +340,12 @@ FoliageColorIsMultiplier: true
 # Vein resource: not in vanilla. Starts an area where ores will spawn. Can be slow, so use a low Rarity (smaller than 1).
 # CustomStructure resource: starts a BO3 structure in the chunk.
 
-Ore(minecraft:quartz_ore,33,10,100.0,0,255,minecraft:netherrack)
-Ore(minecraft:soul_sand,33,10,100.0,0,255,minecraft:netherrack)
-Ore(minecraft:glowstone,33,10,100.0,0,255,minecraft:netherrack)
-Ore(minecraft:magma,33,10,100.0,0,127,minecraft:netherrack)
+Ore(minecraft:quartz_ore,33,10,70.0,0,255,minecraft:netherrack)
+Ore(minecraft:soul_sand,100,1,50.0,0,63,minecraft:netherrack)
+Ore(minecraft:gravel,100,1,50.0,0,63,minecraft:netherrack)
+Ore(minecraft:glowstone,10,5,50.0,32,63,minecraft:netherrack)
+Ore(minecraft:glowstone,50,10,100.0,64,255,minecraft:netherrack)
+Ore(minecraft:magma,50,3,50.0,0,63,minecraft:netherrack)
 Ore(minecraft:lava,3,50,100.0,0,255,minecraft:netherrack)
 Plant(minecraft:fire,20,100.0,0,255,minecraft:netherrack)
 Plant(minecraft:brown_mushroom,2,100.0,0,255,minecraft:netherrack)
