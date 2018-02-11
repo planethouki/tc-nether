@@ -17,3 +17,8 @@
 5. Start bukkit/spigot server
 6. ```mv create tc-nether NETHER -g TerrainControl```
 7. In game, type ```/mvtp tc-nether```
+
+## world screenshots
+![screenshot1](https://github.com/planethouki/images/blob/master/tc-nether/tc-nether_001.png)
+![screenshot2](https://github.com/planethouki/images/blob/master/tc-nether/tc-nether_002.png)
+![screenshot3](https://github.com/planethouki/images/blob/master/tc-nether/tc-nether_003.png)
