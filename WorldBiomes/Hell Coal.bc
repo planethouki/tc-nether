@@ -1,0 +1,158 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This should be the value of the biomeConfig you wish to extend.
+# The extended config will be loaded, at which point the configs included below
+# will overwrite any configs loaded from the extended config.
+BiomeExtends: Hell
+
+# When set to true, all resources of the parent biome (if any) will be copied
+# to the resources queue of this biome. If a resource in the parent biome looks
+# very similar to that of a child biome (for example, two ores of the same type)
+# it won't be copied.
+ResourceInheritance: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Biome size from 0 to GenerationDepth. Defines in which biome layer this biome will be generated (see GenerationDepth).
+# Higher numbers give a smaller biome, lower numbers a larger biome.
+# How this setting is used depends on the value of BiomeMode in the WorldConfig.
+# It will be used for:
+# - normal biomes, ice biomes, isle biomes and border biomes when BiomeMode is set to BeforeGroups
+# - biomes spawned as part of a BiomeGroup when BiomeMode is set to Normal.
+#   For biomes spawned as isles, borders or rivers other settings are available.
+#   Isle biomes:   BiomeSizeWhenIsle (see below)
+#   Border biomes: BiomeSizeWhenBorder (see below)
+#   River biomes:  RiverSize (see WorldConfig)
+BiomeSize: 4
+
+# Biome rarity from 100 to 1. If this is normal or ice biome - chance for spawn this biome then others.
+# Example for normal biome :
+#   100 rarity mean 1/6 chance than other ( with 6 default normal biomes).
+#   50 rarity mean 1/11 chance than other
+# For isle biomes see the BiomeRarityWhenIsle setting below.
+# Doesn`t work on Ocean and River (frozen versions too) biomes when not added as normal biome.
+BiomeRarity: 100
+
+# The hexadecimal color value of this biome. Used in the output of the /tc map command,
+# and used in the input of BiomeMode: FromImage.
+BiomeColor: #707070
+
+ReplaceToBiomeName: Hell
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# BiomeHeight mean how much height will be added in terrain generation
+# It is double value from -10.0 to 10.0
+# Value 0.0 equivalent half of map height with all other default settings
+BiomeHeight: -2.1
+
+# Biome volatility.
+BiomeVolatility: 0.5
+
+# Smooth radius between biomes. Must be between 0 and 32, inclusive. The resulting
+# smooth radius seems to be  (thisSmoothRadius + 1 + smoothRadiusOfBiomeOnOtherSide) * 4 .
+# So if two biomes next to each other have both a smooth radius of 2, the
+# resulting smooth area will be (2 + 1 + 2) * 4 = 20 blocks wide.
+SmoothRadius: 2
+
+# If this value is greater than 0, then it will affect how much, on average, the terrain will rise before leveling off when it begins to increase in elevation.
+# If the value is less than 0, then it will cause the terrain to either increase to a lower height before leveling out or decrease in height if the value is a large enough negative.
+MaxAverageHeight: 0.0
+
+# If this value is greater than 0, then it will affect how much, on average, the terrain (usually at the ottom of the ocean) will fall before leveling off when it begins to decrease in elevation.
+# If the value is less than 0, then it will cause the terrain to either fall to a lesser depth before leveling out or increase in height if the value is a large enough negative.
+MaxAverageDepth: 0.0
+
+# Another type of noise. This noise is independent from biomes. The larger the values the more chaotic/volatile landscape generation becomes.
+# Setting the values to negative will have the opposite effect and make landscape generation calmer/gentler.
+Volatility1: 0.0
+
+Volatility2: 0.0
+
+# Adjust the weight of the corresponding volatility settings. This allows you to change how prevalent you want either of the volatility settings to be in the terrain.
+VolatilityWeight1: 0.5
+
+VolatilityWeight2: 0.45
+
+# Disable all noises except Volatility1 and Volatility2. Also disable default block chance from height.
+DisableBiomeHeight: false
+
+# List of custom height factors, 17 double entries, each controls about 7
+# blocks height, starting at the bottom of the world. Positive entry - larger chance of spawn blocks, negative - smaller
+# Values which affect your configuration may be found only experimentally. Values may be very big, like ~3000.0 depends from height
+# Example:
+#   CustomHeightControl:0.0,-2500.0,0.0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+# Makes empty layer above bedrock layer.
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Ore(minecraft:lava,3,50,100.0,0,255,minecraft:netherrack)
+Plant(minecraft:fire,50,100.0,0,255,minecraft:netherrack)
+Plant(minecraft:brown_mushroom,2,100.0,0,255,minecraft:netherrack)
+Plant(minecraft:red_mushroom,2,100.0,0,255,minecraft:netherrack)
+IceSpike(minecraft:coal_block,HugeSpike,3,1.66,60,128,minecraft:netherrack)
+IceSpike(minecraft:coal_block,SmallSpike,3,98.33,60,128,minecraft:netherrack)
+IceSpike(minecraft:coal_block,Basement,2,100.0,60,128,minecraft:netherrack)
+CustomObject(UseWorld)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
