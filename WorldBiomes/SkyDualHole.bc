@@ -20,7 +20,7 @@ BiomeSize: 4
 
 BiomeRarity: 100
 
-BiomeColor: #FFD5D5
+BiomeColor: #ff9966
 
 ReplaceToBiomeName: Hell
 
@@ -28,22 +28,11 @@ ReplaceToBiomeName: Hell
 # Isle biomes only #
 ####################
 
-IsleInBiome:
+IsleInBiome: SkyDual
 
 BiomeSizeWhenIsle: 6
 
-BiomeRarityWhenIsle: 95
-
-######################
-# Border biomes only #
-######################
-
-BiomeIsBorder: SkyDual
-
-NotBorderNear: SkyDualTower, SkyDualHole
-
-BiomeSizeWhenBorder: 7
-
+BiomeRarityWhenIsle: 94
 
 #######################################################################
 # +-----------------------------------------------------------------+ #
@@ -51,9 +40,9 @@ BiomeSizeWhenBorder: 7
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-BiomeHeight: 0.0
+BiomeHeight: -1.0
 
-BiomeVolatility: 0.1
+BiomeVolatility: 0.0
 
 SmoothRadius: 2
 
@@ -71,4 +60,4 @@ VolatilityWeight2: 0.45
 
 DisableBiomeHeight: false
 
-CustomHeightControl: 0.0, 0.0, -400.0, -400.0, -400.0, -400.0, -600.0, -600.0, -400.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 0.0, 0.0, -800.0, -800.0, -800.0, -800.0, -600.0, -600.0, -400.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
