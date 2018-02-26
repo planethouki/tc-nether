@@ -51,9 +51,9 @@ BiomeSizeWhenBorder: 6
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-BiomeHeight: 0.0
+BiomeHeight: -1.9
 
-BiomeVolatility: 0.2
+BiomeVolatility: 2.5
 
 SmoothRadius: 2
 
@@ -61,17 +61,17 @@ MaxAverageHeight: 0.0
 
 MaxAverageDepth: 0.0
 
-Volatility1: 0.0
+Volatility1: 2.0
 
-Volatility2: 0.0
+Volatility2: 2.0
 
-VolatilityWeight1: 0.5
+VolatilityWeight1: 1.5
 
-VolatilityWeight2: 0.45
+VolatilityWeight2: 1.45
 
 DisableBiomeHeight: false
 
-CustomHeightControl: 0.0, 0.0, 0.0, -200.0, -600.0, -800.0, -400.0, 0.0, 0.0, -400.0, -800.0, -1000.0, 300.0, 200.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 1000.0, 1000.0, 1000.0, 500.0, 0.0, 0.0, 0.0, 75.0, 75.0, -50.0, -50.0, -25.0, -25.0, -50.0, -75.0, -100.0, -200.0, -300.0, -600.0, -1000.0, -1000.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
 
 
 #######################################################################
@@ -96,7 +96,7 @@ RiverVolatility: 0.3
 
 RiverWaterLevel: 63
 
-CustomHeightControl: 0.0, 0.0, 0.0, -200.0, -600.0, -800.0, -400.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
 
 
 #######################################################################
@@ -113,7 +113,7 @@ GroundBlock: minecraft:netherrack
 
 SurfaceAndGroundControl:
 
-ReplacedBlocks:
+ReplacedBlocks: (minecraft:air,minecraft:lava,8,31)
 
 ################################
 # Water / Lava & Frozen States #
@@ -163,12 +163,11 @@ FoliageColorIsMultiplier: true
 
 Ore(minecraft:quartz_ore,33,10,100.0,0,255,minecraft:netherrack)
 Ore(minecraft:soul_sand,50,10,100.0,0,63,minecraft:netherrack)
-#Ore(minecraft:air,200,10,5.0,96,104,minecraft:netherrack)
 Ore(minecraft:glowstone,25,10,100.0,32,63,minecraft:netherrack)
-Ore(minecraft:lava,3,50,100.0,0,255,minecraft:netherrack)
-Plant(minecraft:fire,20,100.0,0,255,minecraft:netherrack)
-Plant(minecraft:brown_mushroom,2,100.0,0,255,minecraft:netherrack)
-Plant(minecraft:red_mushroom,2,100.0,0,255,minecraft:netherrack)
+Ore(minecraft:lava,3,50,100.0,32,255,minecraft:netherrack)
+Plant(minecraft:fire,20,100.0,33,255,minecraft:netherrack)
+Plant(minecraft:brown_mushroom,2,100.0,33,255,minecraft:netherrack)
+Plant(minecraft:red_mushroom,2,100.0,33,255,minecraft:netherrack)
 
 #######################################################################
 # +-----------------------------------------------------------------+ #

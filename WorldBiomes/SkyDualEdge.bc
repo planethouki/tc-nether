@@ -42,7 +42,7 @@ BiomeIsBorder: SkyDual
 
 NotBorderNear: SkyDualTower, SkyDualHole
 
-BiomeSizeWhenBorder: 7
+BiomeSizeWhenBorder: 8
 
 
 #######################################################################
@@ -51,24 +51,8 @@ BiomeSizeWhenBorder: 7
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-BiomeHeight: 0.0
+SmoothRadius: 4
 
-BiomeVolatility: 0.1
+BiomeVolatility: 0.2
 
-SmoothRadius: 2
-
-MaxAverageHeight: 0.0
-
-MaxAverageDepth: 0.0
-
-Volatility1: 0.0
-
-Volatility2: 0.0
-
-VolatilityWeight1: 0.5
-
-VolatilityWeight2: 0.45
-
-DisableBiomeHeight: false
-
-CustomHeightControl: 0.0, 0.0, -400.0, -400.0, -400.0, -400.0, -600.0, -600.0, -400.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
