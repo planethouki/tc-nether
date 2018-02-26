@@ -213,7 +213,7 @@ SurfaceAndGroundControl:
 # Example :
 #   ReplacedBlocks: (GRASS,DIRT,100,127),(GRAVEL,GLASS)
 # Replace grass block to dirt from 100 to 127 height and replace gravel to glass on all height
-ReplacedBlocks: None
+ReplacedBlocks: (minecraft:air,minecraft:lava,8,31)
 
 ################################
 # Water / Lava & Frozen States #
@@ -346,11 +346,11 @@ Ore(minecraft:gravel,100,1,50.0,0,63,minecraft:netherrack)
 #Ore(minecraft:glowstone,10,5,50.0,32,63,minecraft:netherrack)
 #Ore(minecraft:glowstone,50,10,100.0,64,255,minecraft:netherrack)
 Ore(minecraft:glowstone,50,1,5.0,64,72,minecraft:air)
-Ore(minecraft:lava,3,50,100.0,0,255,minecraft:netherrack)
+Ore(minecraft:lava,3,50,100.0,32,255,minecraft:netherrack)
 SmallLake(minecraft:magma,2,1.0,8,48)
-Plant(minecraft:fire,20,100.0,0,255,minecraft:netherrack)
-Plant(minecraft:brown_mushroom,2,100.0,0,255,minecraft:netherrack)
-Plant(minecraft:red_mushroom,2,100.0,0,255,minecraft:netherrack)
+Plant(minecraft:fire,20,100.0,33,255,minecraft:netherrack)
+Plant(minecraft:brown_mushroom,2,100.0,33,255,minecraft:netherrack)
+Plant(minecraft:red_mushroom,2,100.0,33,255,minecraft:netherrack)
 CustomObject(UseWorld)
 
 #######################################################################
