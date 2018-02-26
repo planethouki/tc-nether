@@ -113,7 +113,7 @@ GroundBlock: minecraft:netherrack
 
 SurfaceAndGroundControl:
 
-ReplacedBlocks: (minecraft:air,minecraft:lava,8,31)
+ReplacedBlocks: (minecraft:air,minecraft:lava,8,30)
 
 ################################
 # Water / Lava & Frozen States #
